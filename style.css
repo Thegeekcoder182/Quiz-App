@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: linear-gradient(to right, #a0cbf4, #dbc4ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Kanit", sans-serif;
+
+    
+    
+}
+
+.quiz-section {
+    border: 1px solid green;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(248, 248, 248);
+    width: 44%;
+    height: max-content;
+    
+    
+}
+
+.quiz-section > .quiz {
+    border: 1px solid green;
+    width: 100%;
+    border-bottom: 0.08rem solid black; /* Add border to .quiz */
+}
+
+.quiz-section>.quiz>h2 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding: 1.2rem;
+
+}
+
+.optionsections{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 1.6rem 1.2rem;
+    line-height: 2rem;
+    /* border: 1px solid green; */
+    
+    
+}
+
+.optionsections>ul{
+    list-style: none;
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+   
+    
+}
+
+
+
+.optionsections>ul>li{
+   
+    border: 1px solid rgba(128, 128, 128, 0.54);
+    padding: 0.4rem 1.2rem;
+    padding-right: 8rem;
+    /* margin-bottom: 1.2rem; */
+    border-radius: 28px;
+    
+}
+
+.optionsections>ul>li:hover{
+   
+    background-color: rgba(173, 216, 230, 0.614);
+    cursor: pointer;
+
+}
+
+.optionsections>ul>li>label:hover{
+   
+    cursor: pointer;
+
+}
+
+
+.optionsections>ul>li>input:hover{
+   
+    cursor: pointer;
+
+}
+
+.buttonsection{
+    
+    border-top: 0.08rem solid black;
+    padding: 1rem 1.6rem;
+}
+
+.buttonsection>button{
+
+    padding: 0.64rem 2.2rem;
+    background-color: rgb(74, 127, 196);
+    color: white;
+    border: 1px solid rgb(74, 127, 196);
+    border-radius: 28px;
+    font-size: 0.8rem;
+}
+
+
+.buttonsection>button:hover{
+
+    cursor: pointer;
+    background-color:rgb(58, 96, 146) ;
+}
+
+
+
+
+.result {
+    text-align: center;
+    padding: 4rem;
+}
+
+.result h2{
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.result p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reload-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.reload-button:hover {
+    background-color: #45a049;
+}
+
+.score{ 
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    color: #45a049;
+    font-weight: bolder;
+
+}
+
+
+@media screen and (min-width: 320px ) and (max-width: 768px) {
+    .quiz-section {
+        width: 92%;
+    }
+    
+}
